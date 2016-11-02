@@ -14,7 +14,7 @@ void (*pF_OVF)(void);
 void timer0Init(void)
 {
 	TIMSK|= 0x01; // overflow interrupt only is enabled.
-	TCCR0= 0x02;  // no wave generation, OC0 disabled and clock pre-scale is 8
+	TCCR0= 0x03;  // no wave generation, OC0 disabled and clock pre-scale is 64
 }
 
 
