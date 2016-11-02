@@ -26,10 +26,9 @@
 
 
 #define LOOP		while(1)
-// when the project goes real make the decision = 1000000 for timer0 pre-scale-8 of 8-mega cpu
-#define AM			0x77
-#define DISICION	10000	
-#define PM			0x73
+#define AM		0x77
+#define DISICION	287	// for timer pre-scale= 64 when cpu-CLK= 8-mega
+#define PM		0x73
 
 
 
